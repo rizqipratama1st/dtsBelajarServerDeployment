@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "First try"
-        run: echo "Hello World!"
+        run: echo "Hello World! 2"
       - name: "update Repository"
-        run: apt update
+        run: sudo apt update
