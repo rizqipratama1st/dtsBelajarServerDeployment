@@ -6,3 +6,5 @@ jobs:
     steps:
       - name: "First try"
         run: echo "Hello World!"
+      - name: "update Repository"
+        run: apt update
