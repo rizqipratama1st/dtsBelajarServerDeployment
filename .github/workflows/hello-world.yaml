@@ -1,10 +1,12 @@
-name: hello-world
 on: push
 jobs:
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: "First try"
-        run: echo "Hello World! 2"
-      - name: "update Repository"
-        run: sudo apt update
+    checkout-repo-job:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - name: "List Directory"
+          run: ls
+        - name: "Change Directory"
+          run: cd hello-world/amd64/hello-world.git
+        - name: "Run App"
+          run: ./hello-world/amd64/hello-world/hello
