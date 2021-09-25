@@ -1,12 +1,7 @@
-# on: push
-# jobs:
-#     checkout-repo-job:
-#       runs-on: ubuntu-latest
-#       steps:
-#         - uses: actions/checkout@v2
-#         - name: "List Directory"
-#           run: ls
-#         - name: "Change Directory"
-#           run: cd hello-world/amd64/hello-world.git
-#         - name: "Run App"
-#           run: ./hello-world/amd64/hello-world/hello
+on: push
+jobs:
+    checkout-repo-job:
+      runs-on: computer-local
+      steps:
+        - name: "Hello World"
+          run: echo "hello-world"
