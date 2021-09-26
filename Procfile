@@ -1,1 +1,1 @@
-web: ./bin/example.com/m/v2
+web: ./bin/m
