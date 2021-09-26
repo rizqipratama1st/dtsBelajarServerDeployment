@@ -1,7 +1,7 @@
-on: push
-jobs:
-    checkout-repo-job:
-      runs-on: computer-local
-      steps:
-        - name: "Hello World"
-          run: echo "hello-world"
+# on: push
+# jobs:
+#     checkout-repo-job:
+#       runs-on: ubuntu:focal
+#       steps:
+#         - name: "Hello World"
+#           run: echo "hello-world"
