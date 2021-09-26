@@ -1,0 +1,1 @@
+web: ./bin/example.com/m/v2
